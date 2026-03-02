@@ -1,6 +1,6 @@
 
-import { extractAuthNode, nodeUnauthorized, nodeTooManyRequests } from '../lib/auth';
-import { aiLimiter } from '../lib/rateLimit';
+import { extractAuthNode, nodeUnauthorized, nodeTooManyRequests } from './lib/auth';
+import { aiLimiter } from './lib/rateLimit';
 
 export default async function handler(request: any, response: any) {
   if (request.method !== 'POST') {

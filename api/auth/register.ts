@@ -1,7 +1,7 @@
 
 import type { User } from '../../types';
-import { signJWT, validatePasswordStrength, nodeTooManyRequests } from '../../lib/auth';
-import { registerLimiter, getClientIPNode } from '../../lib/rateLimit';
+import { signJWT, validatePasswordStrength, nodeTooManyRequests } from '../lib/auth';
+import { registerLimiter, getClientIPNode } from '../lib/rateLimit';
 
 export default async function handler(req: any, res: any) {
     if (req.method !== 'POST') {

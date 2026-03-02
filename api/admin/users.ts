@@ -1,6 +1,6 @@
 
 import type { User } from '../../types';
-import { extractAuthNode, nodeUnauthorized, nodeForbidden } from '../../lib/auth';
+import { extractAuthNode, nodeUnauthorized, nodeForbidden } from '../lib/auth';
 
 const KEY_USERS = 'med_russia:users';
 const KEY_ADMINS = 'admin.json';

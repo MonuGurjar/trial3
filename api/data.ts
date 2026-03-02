@@ -1,5 +1,5 @@
 
-import { extractAuthNode, nodeUnauthorized, nodeForbidden } from '../lib/auth';
+import { extractAuthNode, nodeUnauthorized, nodeForbidden } from './lib/auth';
 
 const ALLOWED_KEYS = new Set([
     'med_russia:feedback',

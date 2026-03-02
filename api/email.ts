@@ -1,8 +1,8 @@
 
 import * as nodemailerModule from 'nodemailer';
 const nodemailer = (nodemailerModule as any).default || nodemailerModule;
-import { extractAuthNode, nodeUnauthorized, nodeForbidden, nodeTooManyRequests } from '../lib/auth';
-import { emailLimiter } from '../lib/rateLimit';
+import { extractAuthNode, nodeUnauthorized, nodeForbidden, nodeTooManyRequests } from './lib/auth';
+import { emailLimiter } from './lib/rateLimit';
 
 export const config = {
   api: {

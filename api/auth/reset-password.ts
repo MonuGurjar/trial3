@@ -1,6 +1,6 @@
 
 import type { User } from '../../types';
-import { validatePasswordStrength } from '../../lib/auth';
+import { validatePasswordStrength } from '../lib/auth';
 
 const KEY_USERS = 'med_russia:users';
 const KEY_ADMINS = 'admin.json';

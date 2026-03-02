@@ -1,7 +1,7 @@
 
 import * as cryptoModule from 'crypto';
 const crypto = (cryptoModule as any).default || cryptoModule;
-import { extractAuthNode, nodeUnauthorized } from '../lib/auth';
+import { extractAuthNode, nodeUnauthorized } from './lib/auth';
 
 export default async function handler(request: any, response: any) {
     // SECURITY: Require auth for all upload/delete operations
